@@ -13,30 +13,42 @@ with app.app_context():
 # --- Page Routes ---
 
 @app.route("/")
+@app.route("/index")
+@app.route("/index.html")
 def index():
     return render_template("index.html")
 
 @app.route("/events")
+@app.route("/events.html")
 def events():
     return render_template("events.html")
 
 @app.route("/magic-members")
+@app.route("/magic-members.html")
+@app.route("/magic_members")
+@app.route("/magic_members.html")
 def magic_members():
     return render_template("magic_members.html")
 
 @app.route("/scope-members")
+@app.route("/scope-members.html")
+@app.route("/scope_members")
+@app.route("/scope_members.html")
 def scope_members():
     return render_template("scope_members.html")
 
 @app.route("/register")
+@app.route("/register.html")
 def register_page():
     return render_template("register.html")
 
 @app.route("/login")
+@app.route("/login.html")
 def login_page():
     return render_template("login.html")
 
 @app.route("/admin")
+@app.route("/admin.html")
 def admin_page():
     return render_template("admin.html")
 
