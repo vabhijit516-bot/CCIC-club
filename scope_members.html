@@ -1,0 +1,734 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-dim": "#d2d9f4",
+          "outline": "#75777e",
+          "on-secondary": "#ffffff",
+          "on-primary-container": "#7983a1",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "secondary-container": "#006ff0",
+          "on-error": "#ffffff",
+          "surface": "#faf8ff",
+          "surface-container-high": "#e2e7ff",
+          "tertiary-fixed": "#ffddb8",
+          "tertiary": "#000000",
+          "secondary-fixed-dim": "#aec6ff",
+          "surface-tint": "#535e7a",
+          "on-secondary-fixed-variant": "#004397",
+          "secondary": "#0057c0",
+          "on-error-container": "#93000a",
+          "outline-variant": "#c6c6ce",
+          "inverse-surface": "#283044",
+          "surface-container-low": "#f2f3ff",
+          "background": "#faf8ff",
+          "primary-fixed": "#d9e2ff",
+          "on-primary-fixed": "#0f1b33",
+          "on-background": "#131b2e",
+          "surface-variant": "#dae2fd",
+          "on-surface-variant": "#45464d",
+          "on-tertiary-fixed": "#2a1700",
+          "on-tertiary-container": "#b87500",
+          "on-secondary-container": "#fefcff",
+          "on-secondary-fixed": "#001a43",
+          "surface-container": "#eaedff",
+          "inverse-primary": "#bbc6e6",
+          "primary-fixed-dim": "#bbc6e6",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-fixed-dim": "#ffb95f",
+          "inverse-on-surface": "#eef0ff",
+          "surface-bright": "#faf8ff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "on-tertiary": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-fixed-variant": "#3c4661",
+          "primary": "#000000",
+          "secondary-fixed": "#d8e2ff",
+          "tertiary-container": "#2a1700",
+          "on-surface": "#131b2e",
+          "on-primary": "#ffffff",
+          "primary-container": "#0f1b33"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-3xl": "4.5rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.5rem",
+          "margin-tablet": "2rem",
+          "space-sm": "0.75rem",
+          "space-md": "1rem",
+          "margin-desktop": "3rem",
+          "space-xl": "2rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "display-hero": [
+            "Space Grotesk"
+          ],
+          "headline-lg-mobile": [
+            "Space Grotesk"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Space Grotesk"
+          ],
+          "headline-sm": [
+            "Space Grotesk"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ]
+        },
+        "fontSize": {
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script><link rel="stylesheet" href="/static/css/transitions.css">
+</head><body class="bg-background font-body-md text-on-surface antialiased relative selection:bg-secondary selection:text-on-secondary"><div class="fixed inset-0 pointer-events-none z-0 flex items-center justify-center opacity-[0.04]"><img alt="CCIC Watermark" class="w-[600px] h-[600px] max-w-[80vw] max-h-[819px] object-contain filter grayscale" src="/static/images/ccic_logo.jpg"></div><header class="sticky top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)] bg-surface"><div class="w-full bg-primary-container text-on-primary-container px-space-md py-space-2xs text-center"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-space-md gap-y-space-2xs font-label-sm text-label-sm uppercase tracking-wider"><span class="text-on-primary-fixed-variant">Sri Sairam Engineering College</span><span class="opacity-40">•</span><span class="text-primary-fixed">Department of CSE (Artificial Intelligence &amp; Machine Learning)</span><span class="opacity-40">•</span><span class="text-on-primary-fixed-variant">Autonomous Institution</span></div></div><div class="h-20 bg-surface/90 backdrop-blur-md px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="max-w-7xl mx-auto h-full flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="ccic logo.jpeg" class="h-8 w-auto object-contain" src="/static/images/ccic_logo.jpg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold leading-none">CCIC</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium hidden sm:inline-block leading-tight">Computational and Cognitive Intelligence Club</span></div></div><nav class="hidden xl:flex items-center gap-space-xs font-label-md text-label-md">
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" href="/">Home</a>
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" href="/events">Activities & Events</a>
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" href="/magic-members">Magic Members</a>
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 bg-secondary-container text-on-secondary font-bold" href="/scope-members">Scope Members</a>
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" href="/register">Register</a>
+<a class="px-space-sm py-space-2xs rounded-lg transition-all duration-200 text-amber-700 font-semibold hover:bg-amber-50" href="/admin">Admin</a>
+</nav><div class="flex items-center gap-space-sm"><div class="ccic-nav-auth flex items-center gap-2">
+<a href="/login" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-outline-variant text-on-surface hover:bg-surface-container transition">Sign In</a>
+<a href="/register" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-secondary text-white hover:bg-opacity-90 transition shadow-sm">Join</a>
+</div></div></div></div></header><main class="w-full pt-0 relative z-10 bg-transparent min-h-screen"><div class="flex flex-col w-full">
+<!-- Institutional Code & Accreditation Banner -->
+<section class="w-full bg-surface-container-high py-space-xs px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm tracking-wider uppercase">
+<span class="inline-flex items-center gap-space-2xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Charter Ref
+        </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface text-on-surface font-semibold shadow-sm">SEC202605CCC01</span>
+<span class="hidden sm:inline opacity-40">•</span>
+<span class="hidden sm:inline text-on-surface font-medium">Department of CSE (AI &amp; ML)</span>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm">
+<span class="flex items-center gap-space-2xs text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Faculty Governance Board
+        </span>
+<span class="hidden md:inline text-on-surface-variant font-medium">Affiliated IEEE EMBS Chapter</span>
+</div>
+</div>
+</section>
+<!-- Title & Context Banner -->
+<section class="w-full bg-primary-container text-on-primary py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop relative overflow-hidden">
+<div class="absolute right-0 top-0 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">Official Governance</span>
+<span class="text-on-primary-container font-label-md text-label-md">Sri Sairam Engineering College</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-hero md:text-display-hero text-on-primary tracking-tight">
+            Scope Members
+          </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">
+            Computational and Cognitive Intelligence Club (CCIC) — Spearheaded by academic pioneers across the Department of Computer Science &amp; Engineering (AI &amp; ML) guiding strategic research, intercollegiate hackathons, and neural-symbolic systems.
+          </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm bg-surface-container-lowest/5 p-space-md rounded-xl backdrop-blur-md">
+<div class="flex flex-col">
+<span class="font-display-hero text-headline-md font-bold text-tertiary-fixed-dim">05</span>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase">Faculty Pillars</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-hero text-headline-md font-bold text-secondary-fixed-dim">02</span>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase">Campus Nodes</span>
+</div>
+<div class="flex flex-col col-span-2 sm:col-span-1">
+<span class="font-display-hero text-headline-md font-bold text-on-primary">100%</span>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase">AIML Mentorship</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Department Head & Central Club Advisory (Prominent Institutional Tier) -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Executive Academic Patronage</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Department Leadership &amp; Advisory</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Stewarding institutional ethics, IEEE technical compliance, and high-impact cognitive laboratory initiatives.
+        </p>
+</div>
+<div class="grid grid-cols-1 gap-space-lg max-w-3xl">
+<!-- Dr. E. Priya -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col sm:flex-row gap-space-md items-start transition-all hover:shadow-xl group">
+<div class="relative shrink-0">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Professional academic headshot portrait of Dr. E. Priya, female Indian professor and computer science department chair, wearing formal collegiate attire with navy blue tones, modern university research studio lighting, high resolution and sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLH04SgY8e8FchqgP5n1dVPOBbJqGP0172G4VG11DcZzD5Ixf_wM6x6EMLv8JbuNqaTpWUw72sFulRWym65kp50ALLgjPTA5DxvxYkQIOGQa_vl2kX7UBfs-vEQvMgsuvikiJJe_Q-fj6eh_ET9cg5gIHPt1Wc07LQ1kzZEh0pQYHhjWoSGQeupyDJ5hUs3OalOvn6qVQaAySueBj4hBhDIW0niLT6i1DtQtu4Cyb-oqSTWHuhnNZNZQnQCNia1LVIJw">
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary rounded-full p-space-2xs shadow-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-1 h-full">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between gap-space-2xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold uppercase">Patron / Head</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SEC • CSE (AI &amp; ML)</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-secondary transition-colors">Dr. E. Priya</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">HOD / CSE (AI &amp; ML) — SEC</p>
+<div class="flex flex-wrap gap-space-2xs mt-space-2xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Cognitive Systems Architecture</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Curriculum Governance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md pt-space-sm text-on-surface-variant">
+<a class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" href="#" title="Institutional Profile">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</a>
+<a class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" href="mailto:hod.am@sairam.edu.in" title="Contact Dean/HOD Office">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-auto">Lead Advisor</span>
+</div>
+</div>
+</div>
+<!-- Mr. J. Bharath Kumar -->
+
+</div>
+</div>
+</section>
+<!-- Interactive Search / Filter Controls -->
+<section class="w-full bg-surface-container-low py-space-md px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">supervised_user_circle</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Faculty Scope Roster</span>
+<span class="ml-space-2xs px-space-xs py-space-2xs rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-semibold">5 Designated Leads</span>
+</div>
+<!-- Live Interactive Search & Department Filter Component -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface pl-10 pr-space-md py-space-xs rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-sm" id="memberSearch" oninput="filterScopeMembers()" placeholder="Search by role, professor or domain..." type="text">
+</div>
+<div class="flex items-center gap-space-2xs bg-surface-container-highest p-space-2xs rounded-lg">
+<button class="filter-btn active px-space-sm py-space-2xs rounded font-label-sm text-label-sm font-bold bg-secondary-container text-on-secondary transition-all" onclick="setRoleFilter('all', this)" type="button">All Roles</button>
+<button class="filter-btn px-space-sm py-space-2xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" onclick="setRoleFilter('sec', this)" type="button">SEC Only</button>
+<button class="filter-btn px-space-sm py-space-2xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" onclick="setRoleFilter('sit', this)" type="button">SIT Only</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Faculty Scope Members Grid (Extracted Verbatim from Club Charter) -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="membersGrid">
+<!-- 1. Strategist: Dr. R. Geetha -->
+<div class="scope-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group" data-campus="sec" data-search="strategist dr r geetha assistant professor sec cse ai ml machine learning healthcare computational neuro">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-secondary-container/10 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">psychology</span> Strategist
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">SEC • AI &amp; ML</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of Dr. R. Geetha, female Indian engineering assistant professor in CSE AIML, professional university classroom environment, intelligent confident demeanor, blue and slate grey tones, high dynamic range photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyOcOpbd19Zc1vSSsnCdGfKKedjQdYHjcKEJZ1iH61GG9-5SB5ATwNg3RfZcmiEqTlGQ99-qe60HkgYHdtt2jyoS9bjkOynoYH-X9TJ4U-4I6Csj2lmIp4xMQP36dlgxV2w6OzC4YjCMcDEZHSlQysHiHb_qSHl-E6uy_WDkYghi1tqkxzuiVPKrcigs4KNtsjF7LItMtJGEq5SMC5dS9a4_qqhidqDzJ7A0ee7HudoRylABVkpBA_IOMZoFaltfiIQA">
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">Dr. R. Geetha</h3>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Assistant Professor</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">SEC, CSE (AI&amp;ML)</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Research Directives</span>
+<p class="font-body-md text-body-md text-on-surface">Machine Learning in Healthcare &amp; Neuro-Symbolic Artificial Intelligence</p>
+</div>
+<div class="flex flex-wrap gap-space-2xs mb-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cognitive Systems</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Clinical AI Data</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Deep Reasoning</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Curriculum Vitae">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Send Official Dispatch">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Google Scholar / Publications">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Founding Strategist</span>
+</div>
+</div>
+<!-- 2. Captain: Dr. V. Lalitha -->
+<div class="scope-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group" data-campus="sec" data-search="captain dr v lalitha associate professor sec cse agentic systems autonomous intelligence cognitive architectures">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-tertiary-fixed/40 text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">navigation</span> Captain
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">SEC • CSE</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Professional portrait photograph of Dr. V. Lalitha, senior Indian female associate professor in computer science, scholarly posture, formal university library background with warm ambient light, crisp clarity and academic poise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf9yVS60s_89s4s85VfwPebyOKSi-OS03SvTcuwmXrl3ZfM9B5RFz72MbX0_hoRsZixy_mrlKNWp1J7h8sKd02adLTbtqcurRhfxg9xLCtGqr1EDg8Yd91G9CgLP3e9WMf0pSaQPYiXJ-3ezG8aS-arZadrymLgi38CrYOiCSdXeh67nkh4cOARpZRvgVRLHDwQo9o1hMAkUWb0zrXgjTiQ9WxSDI5uTdf1URW6VlhFZo19lDMQyQQVYzoww1YwITY_g">
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">Dr. V. Lalitha</h3>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Associate Professor</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">SEC, CSE</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Research Directives</span>
+<p class="font-body-md text-body-md text-on-surface">Agentic Systems, Multi-Agent Swarms &amp; Distributed Knowledge Graphs</p>
+</div>
+<div class="flex flex-wrap gap-space-2xs mb-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Agentic LLMs</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">High Perf Computing</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Knowledge Graphs</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Curriculum Vitae">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Send Official Dispatch">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Research Profile">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Operational Captain</span>
+</div>
+</div>
+<!-- 3. Organizer: Ms. S. Gayathri -->
+<div class="scope-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group" data-campus="sec" data-search="organizer ms mathupriya assistant professor sec cse ai ml edge neuromorphic iot">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">tune</span> Organizer
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">SEC</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container-high relative shadow-sm"><img class="w-full h-full object-cover" alt="Ms. Mathupriya" src="/static/images/mathupriya.jpg"></div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">Ms. Mathupriya</h3>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Assistant Professor</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">SEC</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Research Directives</span>
+<p class="font-body-md text-body-md text-on-surface">Cognitive Intelligence Frameworks, Edge AI &amp; Sensor Telemetry</p>
+</div>
+<div class="flex flex-wrap gap-space-2xs mb-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Edge Intelligence</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">IoT AI Pipelines</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Neural Systems</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Curriculum Vitae">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Send Official Dispatch">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Research Citations">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead Organizer</span>
+</div>
+</div>
+<!-- 4. Propagator: Mrs. S. Ebenezer Roselin -->
+<div class="scope-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group" data-campus="sit" data-search="propagator mrs s ebenezer roselin assistant professor sit cse cyber security adversarial ai secure cognitive networks">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">podcasts</span> Propagator
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">SIT • Cyber Security</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" alt="Mrs. S. Ebenezer Roselin" src="/static/images/ebenezer.jpg">
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">Mrs. S. Ebenezer Roselin</h3>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Assistant Professor</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">SIT, CSE (Cyber Security)</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Research Directives</span>
+<p class="font-body-md text-body-md text-on-surface">Adversarial Machine Learning, Threat Vectors &amp; Secure Cognitive Cryptography</p>
+</div>
+<div class="flex flex-wrap gap-space-2xs mb-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Adversarial Robustness</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Privacy-Preserving AI</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cyber Forensics</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Curriculum Vitae">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Send Official Dispatch">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Google Scholar / Publications">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">External Outreach</span>
+</div>
+</div>
+<!-- 5. Executor: Mr. V. Kathiravan -->
+
+<!-- 6. Executor: Ms. M. Anitha -->
+<div class="scope-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group" data-campus="sit" data-search="executor ms m anitha assistant professor sit ai ds data science predictive modeling cognitive data synthesis">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">terminal</span> Executor
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">SIT • AI-DS</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container-high relative">
+<img class="w-full h-full object-cover" alt="Ms. M. Anitha" src="/static/images/anitha.jpg">
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">Ms. M. Anitha</h3>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Assistant Professor</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">SIT, AI-DS</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Research Directives</span>
+<p class="font-body-md text-body-md text-on-surface">Predictive Data Analytics, Cognitive Data Synthesis &amp; Large Scale Neural Mining</p>
+</div>
+<div class="flex flex-wrap gap-space-2xs mb-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Neural Synthesis</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Predictive Modeling</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Big Data Intelligence</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Curriculum Vitae">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Send Official Dispatch">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container hover:text-secondary transition-colors" title="Data Repositories">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Data Pipeline Executor</span>
+</div>
+</div>
+</div>
+<!-- Empty State for Search Filter -->
+<div class="hidden text-center py-space-2xl bg-surface-container-lowest rounded-xl shadow-sm" id="noResultsMsg">
+<span class="material-symbols-outlined text-outline text-5xl mb-space-xs">search_off</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">No Scope Members Found</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto mt-space-2xs">
+          Try refining your keyword query or switch filters back to "All Roles".
+        </p>
+</div>
+</div>
+</section>
+<!-- Student Leadership & Execution Bridge (Connecting Scope to Operations) -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Student Execution Guild</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Student Club Co-ordinators</h2>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Working directly under the Faculty Scope board to orchestrate hackathons, speaker series, and technical labs.
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg max-w-5xl">
+<!-- Co-ordinator 1: S L Hari Priyan -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" alt="S L HARI PRIYAN" src="/static/images/haripriyan.jpg">
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Student Co-ordinator</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• SEC CSE (AIML)</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">S L HARI PRIYAN</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">General Technical Operations &amp; IEEE Inter-Society Liaison</p>
+</div>
+</div>
+
+<!-- Co-ordinator 2: K Guru Prakash -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" alt="K GURU PRAKASH" src="/static/images/guru.jpg">
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Student Co-ordinator</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• SEC CSE (AIML)</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">K GURU PRAKASH</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Robotics, Vision Systems &amp; Hardware Technical Acceleration</p>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+<!-- Scope Governance Charter Directives Section -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-space-xl items-center">
+<div class="flex flex-col gap-space-sm lg:col-span-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Operational Protocol</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">The Scope Charter Model</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Unlike traditional bureaucratic committees, the CCIC Scope structure distributes authority across five synchronized roles to accelerate experimental AI research and collegiate technical publication.
+        </p>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<a class="px-space-md py-space-xs bg-secondary-container text-on-secondary rounded-lg font-label-md text-label-md font-bold inline-flex items-center gap-space-2xs shadow-sm hover:shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span> Download Club Bylaws
+          </a>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md lg:col-span-2">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-2xs">Strategist Domain</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Guides curriculum integration, high-level AI research trajectory, grant applications, and institutional journal reviews.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">navigation</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-2xs">Captain Domain</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Maintains operational discipline, event timeliness, faculty council compliance, and intra-departmental alignment.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-2xs">Organizer &amp; Propagator</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Liaisons across partner campuses (SEC &amp; SIT) to mobilize student participation, hardware labs, and IEEE joint events.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-2xs">Executor Domain</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Engineers code sprints, validates algorithm benchmarks, manages compute cloud quotas, and guides project delivery.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let activeCampus = 'all';
+
+  function setRoleFilter(campus, btn) {
+    activeCampus = campus;
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(b => {
+      b.classList.remove('bg-secondary-container', 'text-on-secondary', 'font-bold');
+      b.classList.add('text-on-surface-variant');
+    });
+    btn.classList.add('bg-secondary-container', 'text-on-secondary', 'font-bold');
+    btn.classList.remove('text-on-surface-variant');
+    filterScopeMembers();
+  }
+
+  function filterScopeMembers() {
+    const query = (document.getElementById('memberSearch').value || '').toLowerCase().trim();
+    const cards = document.querySelectorAll('.scope-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCampus = card.getAttribute('data-campus');
+      const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+
+      const matchesCampus = (activeCampus === 'all') || (cardCampus === activeCampus);
+      const matchesQuery = query === '' || searchData.includes(query);
+
+      if (matchesCampus && matchesQuery) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const noResults = document.getElementById('noResultsMsg');
+    if (noResults) {
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface relative z-10 shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[18px]">hub</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">CCIC</span></div><p class="font-body-md text-body-md text-on-surface-variant">Computational and Cognitive Intelligence Club driving interdisciplinary research, neuro-symbolic AI paradigms, and collegiate engineering excellence.</p><p class="font-label-sm text-label-sm text-secondary font-semibold">Affiliated with IEEE EMBS &amp; Sairam Institutions</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Quick Links</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" href="#">About the Club</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Scope &amp; Magic Members</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Research Activities &amp; Events</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Club Achievements</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">AI Puzzle &amp; Play Zone</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Academic Base</span><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Department of Computer Science &amp; Engineering (AIML)<br>Sri Sairam Engineering College<br>Sai Leo Nagar, West Tambaram<br>Chennai - 600 044, Tamil Nadu, India</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Institutional Support</span><p class="font-body-md text-body-md text-on-surface-variant">Empowered by the IEEE Student Branch ecosystem, providing students with advanced compute infrastructure and global collegiate networking.</p><div class="flex items-center gap-space-xs mt-space-xs"><span class="px-space-xs py-space-2xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">IEEE EMBS</span><span class="px-space-xs py-space-2xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Autonomous SEC</span></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-label-md text-label-md text-on-surface-variant">© 2026 Computational and Cognitive Intelligence Club (CCIC), Sri Sairam Engineering College. All Rights Reserved.</p><p class="font-label-sm text-label-sm text-on-surface-variant">Supported by IEEE EMBS &amp; Sairam Institutions</p></div></div></footer>
+
+
+
+
+<!-- Firebase Client SDK & CCIC Authentication -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="/static/js/firebase-config.js"></script>
+<script src="/static/js/auth.js"></script>
+<script src="/static/js/smooth-scroll.js"></script>
+</body>
+</html>
+
