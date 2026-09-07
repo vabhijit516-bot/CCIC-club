@@ -75,3 +75,101 @@ header.sticky + main,
 main.pt-0 {
     padding-top: 0 !important;
 }
+
+/* === Custom Rich Animations for About & Core Sections === */
+
+@keyframes emblemBreath {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 10px 30px -5px rgba(0, 87, 192, 0.3), 0 0 0 1px rgba(0, 87, 192, 0.1);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 18px 45px -5px rgba(0, 87, 192, 0.45), 0 0 25px 2px rgba(96, 165, 250, 0.4);
+    }
+}
+
+.emblem-animated {
+    animation: emblemBreath 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+.emblem-animated:hover {
+    transform: scale(1.06) rotate(1deg);
+}
+
+/* Staggered Scroll Reveal */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Interactive Hover Cards */
+.about-card {
+    transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -10px rgba(15, 27, 51, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-color: #93c5fd !important;
+}
+
+.focus-card {
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.focus-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 25px -8px rgba(0, 87, 192, 0.15);
+    border-color: #3b82f6 !important;
+}
+
+/* Golden Dot Divider Pulse */
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(245, 158, 11, 0.7);
+    }
+}
+.pulse-gold-dot {
+    animation: pulseDot 2.5s ease-in-out infinite;
+}
+
+/* Social Link Hover Glow */
+.social-btn-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transition: all 0.3s ease;
+}
+.social-btn-insta:hover {
+    box-shadow: 0 8px 25px rgba(220, 39, 67, 0.4);
+    transform: translateY(-3px) scale(1.03);
+}
+
+.social-btn-linkedin {
+    background: #0077b5;
+    transition: all 0.3s ease;
+}
+.social-btn-linkedin:hover {
+    background: #005582;
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+    transform: translateY(-3px) scale(1.03);
+}
+

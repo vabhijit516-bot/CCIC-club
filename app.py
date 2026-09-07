@@ -18,6 +18,11 @@ with app.app_context():
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+@app.route("/about.html")
+def about_page():
+    return render_template("about.html")
+
 @app.route("/events")
 @app.route("/events.html")
 def events():
