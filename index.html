@@ -216,7 +216,20 @@
 </nav><div class="flex items-center gap-space-sm"><div class="ccic-nav-auth flex items-center gap-2">
 <a href="/login" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-outline-variant text-on-surface hover:bg-surface-container transition">Sign In</a>
 <a href="/register" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-secondary text-white hover:bg-opacity-90 transition shadow-sm">Join</a>
-</div></div></div></div></header><main class="w-full pt-0 relative z-10 bg-transparent min-h-screen"><div class="flex flex-col w-full">
+</div><button id="mobileNavToggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" class="xl:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container focus:outline-none focus:ring-2 focus:ring-secondary transition-colors"><span class="material-symbols-outlined text-[26px] block" id="mobileNavIcon">menu</span></button></div></div></div></div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobileNavDropdown" class="hidden xl:hidden border-t border-outline-variant/15 bg-surface/98 backdrop-blur-xl shadow-xl transition-all duration-200">
+<div class="max-w-7xl mx-auto px-margin-mobile py-3 flex flex-col gap-1 font-label-md text-label-md">
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 bg-secondary-container text-on-secondary font-bold flex items-center gap-2" href="/"><span class="material-symbols-outlined text-[20px]">home</span> Home</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium flex items-center gap-2" href="/about"><span class="material-symbols-outlined text-[20px]">info</span> About</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium flex items-center gap-2" href="/events"><span class="material-symbols-outlined text-[20px]">event</span> Activities &amp; Events</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium flex items-center gap-2" href="/magic-members"><span class="material-symbols-outlined text-[20px]">groups</span> Magic Members</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium flex items-center gap-2" href="/scope-members"><span class="material-symbols-outlined text-[20px]">school</span> Scope Members</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium flex items-center gap-2" href="/register"><span class="material-symbols-outlined text-[20px]">how_to_reg</span> Register</a>
+<a class="px-4 py-2.5 rounded-lg transition-all duration-200 text-amber-700 font-semibold hover:bg-amber-50 flex items-center gap-2" href="/admin"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span> Admin Portal</a>
+</div>
+</div>
+</header><main class="w-full pt-0 relative z-10 bg-transparent min-h-screen"><div class="flex flex-col w-full">
 <!-- Institutional Credential Top Ribbon -->
 <section class="w-full bg-surface-container-high py-space-xs px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
 <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant">
@@ -383,12 +396,12 @@
 </div>
 <div class="flex items-center gap-space-xs">
 <span class="px-space-sm py-space-2xs bg-surface-container-high rounded-lg text-on-surface-variant font-label-sm text-label-sm font-semibold">
-            Sri Sairam Engineering College
+            SEC &amp; SIT • Sairam Institutions
           </span>
 </div>
 </div>
 <!-- Dignitaries Grid -->
-<div class="grid grid-cols-1 gap-space-lg md:grid-cols-3">
+<div class="grid grid-cols-1 gap-space-lg sm:grid-cols-2 lg:grid-cols-4">
 <!-- Dr. Sai Prakash Leo Muthu -->
 <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
 <div class="w-full h-1.5 bg-gradient-to-r from-tertiary-fixed via-secondary-container to-tertiary-fixed absolute top-0 left-0"></div>
@@ -415,12 +428,12 @@
             Championing disruptive student-led ecosystems, patent generation, and next-gen AI supercomputing infrastructure.
           </p>
 </div>
-<!-- Dr. J. Raja & Dr. K. Palanikumar -->
+<!-- Dr. J. Raja -->
 <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
 <div class="w-full h-1.5 bg-secondary-container absolute top-0 left-0"></div>
 <div class="relative mb-space-md mt-space-xs">
 <div class="w-32 h-32 rounded-full p-1 bg-surface-container-high shadow-md">
-<img class="w-full h-full rounded-full object-cover" alt="Dr. J. Raja / Dr. K. Palanikumar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx4r9RGrMNgsJsWaHbvQ1iUeKjPygnmJOCHlw7AtSkGJO8nOWspZ_CcmAGdeb8j9xxAsWPly24QjfGepv9NgTxqvhGyT6XE9_YuihU9WPFoVEmF8547HndH8ACbjSMJnmmPdcf2C6ikfQRklsJ1vxecRUh257KbHFf7eSSz4epa8XAIrBGDGt5r7iCOfm-dksUkqrpO0UWadnh4E4obLKRrqto8CDMh1OtLtiEfon1_5Aet0Mwo-9WoCo1dfr3ebMNKw">
+<img class="w-full h-full rounded-full object-cover" alt="Dr. J. Raja" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx4r9RGrMNgsJsWaHbvQ1iUeKjPygnmJOCHlw7AtSkGJO8nOWspZ_CcmAGdeb8j9xxAsWPly24QjfGepv9NgTxqvhGyT6XE9_YuihU9WPFoVEmF8547HndH8ACbjSMJnmmPdcf2C6ikfQRklsJ1vxecRUh257KbHFf7eSSz4epa8XAIrBGDGt5r7iCOfm-dksUkqrpO0UWadnh4E4obLKRrqto8CDMh1OtLtiEfon1_5Aet0Mwo-9WoCo1dfr3ebMNKw">
 </div>
 <span class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center text-[12px] shadow-md">
 <span class="material-symbols-outlined text-[14px]">school</span>
@@ -428,17 +441,43 @@
 </div>
 <div class="flex flex-col gap-space-2xs">
 <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">
-              Dr. J. Raja / Dr. K. Palanikumar
+              Dr. J. Raja
             </h3>
 <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wide">
-              Principal (Campus 1 &amp; 2)
+              Principal
             </span>
 <span class="font-body-md text-body-md text-on-surface-variant">
-              Sri Sairam Engineering College
+              Sri Sairam Engineering College (SEC)
             </span>
 </div>
 <p class="font-body-md text-[13px] text-outline mt-space-sm leading-relaxed border-t border-surface-container-high pt-space-xs">
             Administering premier autonomous curriculum benchmarking, academic rigour, and Tier-1 NBA/NAAC excellence.
+          </p>
+</div>
+<!-- Dr. Palanikumar K -->
+<div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
+<div class="w-full h-1.5 bg-secondary-container absolute top-0 left-0"></div>
+<div class="relative mb-space-md mt-space-xs">
+<div class="w-32 h-32 rounded-full p-1 bg-surface-container-high shadow-md">
+<img class="w-full h-full rounded-full object-cover" alt="Dr. Palanikumar K" src="/static/images/palanikumar.jpg">
+</div>
+<span class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center text-[12px] shadow-md">
+<span class="material-symbols-outlined text-[14px]">school</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">
+              Dr. Palanikumar K
+            </h3>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wide">
+              Principal
+            </span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+              Sri Sairam Institute of Technology (SIT)
+            </span>
+</div>
+<p class="font-body-md text-[13px] text-outline mt-space-sm leading-relaxed border-t border-surface-container-high pt-space-xs">
+            Spearheading institutional research, technical innovation, and interdisciplinary engineering excellence at SIT.
           </p>
 </div>
 <!-- Dr. E. Priya -->

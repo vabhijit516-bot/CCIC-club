@@ -80,9 +80,22 @@
                 <a href="/login" class="px-3.5 py-1.5 text-xs font-headline font-semibold text-white bg-secondary hover:bg-blue-700 rounded-md transition shadow-sm">
                     Sign In
                 </a>
-            </div>
+            </div><button id="mobileNavToggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-secondary transition-colors"><span class="material-symbols-outlined text-[26px] block" id="mobileNavIcon">menu</span></button>
         </div>
-    </header>
+    
+<!-- Mobile Navigation Drawer -->
+<div id="mobileNavDropdown" class="hidden md:hidden border-t border-slate-800 bg-[#07132b]/98 backdrop-blur-xl shadow-xl transition-all duration-200">
+<div class="max-w-7xl mx-auto px-6 py-3 flex flex-col gap-1 font-headline text-sm">
+<a class="px-4 py-2.5 rounded-lg transition-colors text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-2" href="/"><span class="material-symbols-outlined text-[20px]">home</span> Home</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-2" href="/about"><span class="material-symbols-outlined text-[20px]">info</span> About</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-2" href="/events"><span class="material-symbols-outlined text-[20px]">event</span> Activities &amp; Events</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-2" href="/magic-members"><span class="material-symbols-outlined text-[20px]">groups</span> Magic Members</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-2" href="/scope-members"><span class="material-symbols-outlined text-[20px]">school</span> Scope Members</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-secondary font-bold bg-white/10 flex items-center gap-2" href="/register"><span class="material-symbols-outlined text-[20px]">how_to_reg</span> Registration</a>
+<a class="px-4 py-2.5 rounded-lg transition-colors text-amber-400 font-semibold hover:bg-white/10 flex items-center gap-2" href="/admin"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span> Admin Portal</a>
+</div>
+</div>
+</header>
 
     <!-- Page Hero Banner -->
     <section class="bg-gradient-to-r from-[#07132b] via-[#0c1e3d] to-[#07132b] text-white py-12 px-6 border-b border-slate-800 relative overflow-hidden">

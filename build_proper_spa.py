@@ -283,7 +283,7 @@ html_content = '''<!DOCTYPE html>
             <h2 class="font-headline text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Institutional Leadership Steering Excellence</h2>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Chairman -->
             <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCu_9uYv7R3fP0kK2U0X5M" alt="Dr. Sai Prakash Leo Muthu" class="w-24 h-24 rounded-full object-cover border-2 border-secondary shadow mb-4" onerror="this.src='/static/images/ccic_logo.jpg'">
@@ -292,12 +292,20 @@ html_content = '''<!DOCTYPE html>
               <p class="text-xs text-slate-500">Chairman &amp; CEO • Sairam Institutions</p>
             </div>
 
-            <!-- Principal / Dean -->
+            <!-- Principal SEC -->
             <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLH04SgY8e8FchqgP5n1dVPOBbJqGP0172G4VG" alt="Dr. K. Palanikumar / Dr. J. Raja" class="w-24 h-24 rounded-full object-cover border-2 border-secondary shadow mb-4" onerror="this.src='/static/images/ccic_logo.jpg'">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx4r9RGrMNgsJsWaHbvQ1iUeKjPygnmJOCHlw7AtSkGJO8nOWspZ_CcmAGdeb8j9xxAsWPly24QjfGepv9NgTxqvhGyT6XE9_YuihU9WPFoVEmF8547HndH8ACbjSMJnmmPdcf2C6ikfQRklsJ1vxecRUh257KbHFf7eSSz4epa8XAIrBGDGt5r7iCOfm-dksUkqrpO0UWadnh4E4obLKRrqto8CDMh1OtLtiEfon1_5Aet0Mwo-9WoCo1dfr3ebMNKw" alt="Dr. J. Raja" class="w-24 h-24 rounded-full object-cover border-2 border-secondary shadow mb-4" onerror="this.src='/static/images/ccic_logo.jpg'">
               <span class="text-[11px] font-headline font-bold uppercase text-secondary tracking-wider">Academic Leadership</span>
-              <h3 class="font-headline text-lg font-bold text-slate-900 mt-1">Dr. J. Raja &amp; Dr. K. Palanikumar</h3>
-              <p class="text-xs text-slate-500">Dean Academics &amp; Principal • Sri Sairam Engineering College</p>
+              <h3 class="font-headline text-lg font-bold text-slate-900 mt-1">Dr. J. Raja</h3>
+              <p class="text-xs text-slate-500">Principal • Sri Sairam Engineering College (SEC)</p>
+            </div>
+
+            <!-- Principal SIT -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+              <img src="/static/images/palanikumar.jpg" alt="Dr. Palanikumar K" class="w-24 h-24 rounded-full object-cover border-2 border-secondary shadow mb-4" onerror="this.src='/static/images/ccic_logo.jpg'">
+              <span class="text-[11px] font-headline font-bold uppercase text-secondary tracking-wider">Academic Leadership</span>
+              <h3 class="font-headline text-lg font-bold text-slate-900 mt-1">Dr. Palanikumar K</h3>
+              <p class="text-xs text-slate-500">Principal • Sri Sairam Institute of Technology (SIT)</p>
             </div>
 
             <!-- HOD -->

@@ -87,4 +87,45 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     });
+
+    // 5. Universal Mobile Navigation Menu Toggle Handler
+    window.toggleMobileMenu = function () {
+        const menu = document.getElementById("mobileNavDropdown");
+        const icon = document.getElementById("mobileNavIcon");
+        if (!menu) return;
+        const isClosed = menu.classList.contains("hidden");
+        if (isClosed) {
+            menu.classList.remove("hidden");
+            if (icon) icon.textContent = "close";
+        } else {
+            menu.classList.add("hidden");
+            if (icon) icon.textContent = "menu";
+        }
+    };
+
+    // Close mobile dropdown when tapping outside or tapping a link
+    document.addEventListener("click", (e) => {
+        const menu = document.getElementById("mobileNavDropdown");
+        const toggleBtn = document.getElementById("mobileNavToggle");
+        const icon = document.getElementById("mobileNavIcon");
+        if (!menu || menu.classList.contains("hidden")) return;
+        if (toggleBtn && (toggleBtn.contains(e.target) || toggleBtn === e.target)) return;
+        if (!menu.contains(e.target) || e.target.tagName === "A" || e.target.closest("a")) {
+            menu.classList.add("hidden");
+            if (icon) icon.textContent = "menu";
+        }
+    });
+
+    // Automatically hide on desktop resize
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1280) {
+            const menu = document.getElementById("mobileNavDropdown");
+            const icon = document.getElementById("mobileNavIcon");
+            if (menu && !menu.classList.contains("hidden")) {
+                menu.classList.add("hidden");
+                if (icon) icon.textContent = "menu";
+            }
+        }
+    });
 });
+
