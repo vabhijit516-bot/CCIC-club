@@ -333,7 +333,7 @@
 <div class="flex flex-col gap-space-2xs p-space-xs">
 <div class="flex items-center justify-center sm:justify-start gap-space-2xs text-secondary">
 <span class="material-symbols-outlined text-[24px]">group_add</span>
-<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-members">300+</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-members">150+</span>
 </div>
 <span class="font-label-md text-label-md uppercase text-on-surface-variant font-semibold">Active Student Researchers</span>
 <span class="font-body-md text-body-md text-outline">Across AI, Data Science &amp; Cyber</span>
@@ -341,7 +341,7 @@
 <div class="flex flex-col gap-space-2xs p-space-xs">
 <div class="flex items-center justify-center sm:justify-start gap-space-2xs text-secondary">
 <span class="material-symbols-outlined text-[24px]">terminal</span>
-<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-events">15+</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-events">2</span>
 </div>
 <span class="font-label-md text-label-md uppercase text-on-surface-variant font-semibold">Workshops &amp; Hackathons</span>
 <span class="font-body-md text-body-md text-outline">Conducted with IEEE Chapters</span>
@@ -349,7 +349,7 @@
 <div class="flex flex-col gap-space-2xs p-space-xs">
 <div class="flex items-center justify-center sm:justify-start gap-space-2xs text-secondary">
 <span class="material-symbols-outlined text-[24px]">rocket_launch</span>
-<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-projects">25+</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="stat-projects">0</span>
 </div>
 <span class="font-label-md text-label-md uppercase text-on-surface-variant font-semibold">AI Projects Incubated</span>
 <span class="font-body-md text-body-md text-outline">Agentic Workflows &amp; Neural Nets</span>
@@ -837,9 +837,10 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            animateValue("stat-members", 100, 300, 1200, "+");
-            animateValue("stat-events", 1, 15, 1200, "+");
-            animateValue("stat-projects", 5, 25, 1200, "+");
+            animateValue("stat-members", 50, 150, 1000, "+");
+            animateValue("stat-events", 1, 2, 600, "");
+            const proj = document.getElementById("stat-projects");
+            if (proj) proj.innerHTML = "0";
             observer.unobserve(entry.target);
           }
         });
